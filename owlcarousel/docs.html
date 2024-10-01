@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navi {
+            background-color: #1ccacd;
+            top: 0;
+            font-family: inherit;
+            font-weight: 300;
+            font-style: italic;
+            padding-left: 20rem;
+            word-spacing: 25px;
+        }
+        
+        .navi1 {
+            color: #1ccacd;
+            font-family: inherit;
+            position: relative;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            padding-top: 100px;
+        }
+        
+        .navi2 {
+            background-color: #1ccacd;
+            top: 0;
+            height: 350px;
+            position: relative;
+        }
+        
+        .ulo {
+            text-decoration: none;
+            font: #FFF;
+            font-size: 20px;
+            position: sticky;
+            font-size: x-large;
+            font-style: normal;
+        }
+        
+        .ult {
+            display: inline;
+            word-spacing: 30px;
+        }
+        
+        body {
+            background: #fff;
+            width: 100%;
+            color: #222;
+            cursor: auto;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        
+        .head {
+            width: 100%;
+            background: #f7f7f7;
+            display: block;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-size: 45px;
+            font-weight: 300;
+            line-height: 2;
+            padding-left: 17.8rem;
+        }
+        
+        #docs {
+            font-size: 100%;
+            color: #222;
+            cursor: auto;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1.5;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            padding-top: 2rem;
+        }
+        
+        .row {
+            font-size: 100%;
+            color: #222;
+            cursor: auto;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1.5;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0 auto;
+            width: 50rem;
+            
+        }
+        
+        .col1 {
+            font-size: 100%;
+            color: #222;
+            cursor: auto;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1.5;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            padding-left: .9375rem;
+            padding-right: 1.9375rem;
+            float: left;
+            width: 25%;
+        }
+        
+        .col2 {
+            font-size: 100%;
+            color: #222;
+            cursor: auto;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1.5;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            padding-left: .9375rem;
+            padding-right: .9375rem;
+            width: 75%;
+            float: right;
+        }
+        
+        .side-nav {
+            color: #222;
+            cursor: auto;
+            font-style: normal;
+            font-weight: normal;
+            box-sizing: border-box;
+            font-size: 1rem;
+            line-height: 1.6;
+            display: block;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            list-style-position: outside;
+            list-style-type: none;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 0;
+            padding: 1rem 0;
+            text-align: right;
+        }
+        
+        .side-nav-head {
+            cursor: auto;
+            font-style: normal;
+            line-height: 1.6;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            list-style-position: outside;
+            list-style-type: none;
+            box-sizing: border-box;
+            margin: 0;
+            text-transform: uppercase;
+            color: #000;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 0rem 0.2rem .3rem 0;
+        }
+        
+        .docscontent {
+            font-size: 100%;
+            color: #222;
+            cursor: auto;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1.5;
+            box-sizing: border-box;
+            display: block;
+        }
+        
+        #welcome {
+            cursor: auto;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: #222;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            text-rendering: optimizeLegibility;
+            line-height: 1.4;
+            font-size: 2.3125rem;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        
+        .f2 {
+            cursor: auto;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: #222;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+            text-rendering: optimizeLegibility;
+            line-height: 1.4;
+            font-size: 1.6875rem;
+        }
+        
+        .hljscs {
+            cursor: auto;
+            font-style: normal;
+            font-weight: 200;
+            box-sizing: border-box;
+            border-color: #dfdfdf;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Consolas, "Liberation Mono", Courier, monospace;
+            font-size: 90%;
+            font-weight: normal;
+            border-radius: 2px;
+            display: block;
+            color: #333;
+            background: #f8f8f8;
+            padding: 2rem;
+            line-height: 1.4;
+            overflow-x: scroll;
+        }
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /*div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+   
+    box-sizing: border-box;
+}*/
+    </style>
+</head>
+
+<body>
+    <header class="navi">
+        <nav>
+            <ul class="ulo">
+                <li class="ult"><a href="" style="font-style:italic;">owl.carousel.js</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="ult"><a href="index.html">home</a></li>&nbsp;
+                    <li class="ult"><a href="demo.html">demo</a></li>&nbsp;
+                    <li class="ult"><a href="docs.html">docs</a></li>&nbsp;
+            </ul>
+        </nav>
+    </header>
+
+    <p class="head">Getting Started</p>
+    <div id="docs">
+        <div class="row">
+            <div class="col1">
+                <ul class="side-nav">
+                    <li class="side-nav-head">Getting Started</li>
+                    <li class="active"> <a>Welcome</a> </li>
+                    <li> <a>Installation</a> </li>
+                    <li> <a>FAQ</a> </li>
+                </ul>
+                <ul class="side-nav">
+                    <li class="side-nav-head">API</li>
+                    <li> <a>Options</a></li>
+                    <li> <a>Classes</a></li>
+                    <li> <a>Events</a></li>
+                </ul>
+                <ul class="side-nav">
+                    <li class="side-nav-head">Development</li>
+                    <li> <a>Built-in Plugins</a> </li>
+                    <li> <a>Plugin API</a> </li>
+                    <li> <a>Sass Styles</a> </li>
+                    <li> <a>External Libs</a> </li>
+                </ul>
+                <ul class="side-nav">
+                    <li class="side-nav-head">Support</li>
+                    <li> <a>Contributing</a> </li>
+                    <li> <a>Changelog</a> </li>
+                    <li> <a>Contact</a> </li>
+                </ul>
+            </div>
+            <div class="col2">
+                <article class="docs-content">
+                    <h2 id="welcome">Welcome</h2>
+                    <blockquote>
+                        <p>No matter if you are a beginner or an advanced user, starting with Owl is easy.</p>
+                    </blockquote>
+                    <h3 class="f2">New Features</h3>
+                    <ul>
+                        <li>Infinity Loop</li>
+                        <li>Center item</li>
+                        <li>Smart Speed</li>
+                        <li>Stage Padding</li>
+                        <li>Item Margin</li>
+                        <li>Ability to make almost all options responsive</li>
+                        <li>Various Widths</li>
+                        <li>Callback Events</li>
+                        <li>RTL</li>
+                        <li>YouTube/Vimeo/vzaar support (fetching thumbnails as well)</li>
+                        <li>Anchors navigation</li>
+                        <li>Merged Items</li>
+                        <li>and more...</li>
+                    </ul>
+                    <h3 class="f2">Compatibility</h3>
+                    <p>Owl Carousel 2.x.x is not compatibile with previous version 1.x.x. The idea stays the same and it has a lot in common with Owl1 but the core code was re-written from scratch and I’m very proud with all the new features.</p>
+                    <p>Owl Carousel has been tested in following browsers/devices:</p>
+                    <ul>
+                        <li>Chrome</li>
+                        <li>Firefox</li>
+                        <li>Opera</li>
+                        <li>IE7/8/10/11</li>
+                        <li>iPad Safari</li>
+                        <li>iPod4 Safari</li>
+                        <li>Nexus 7 Chrome</li>
+                        <li>Galaxy S4</li>
+                        <li>Nokia 8s Windows8</li>
+                    </ul>
+                    <h3 class="f2">Library</h3>
+                    <p>Download a version that suits your needs:</p>
+                    <ul>
+                        <li> <a href="https://github.com/OwlCarousel2/OwlCarousel2/archive/2.3.4.zip">Owl Carousel - 2.3.4</a> - Distributed version - compiled and minified. Javascript, images and CSS included. </li>
+                        <li> <a href="https://github.com/OwlCarousel2/OwlCarousel2/archive/master.zip">Owl Carousel Source - 2.3.4</a> - Source files including this documentation. All wrapped in Grunt project. </li>
+                    </ul>
+                    <h3 class="f2">Files included</h3>
+                    <p>Distributed version structure:</p>
+                    <pre><code class=" hljscs">owlcoresoul/
+  ├── assets/
+  │   ├── owl.carousel.css
+  │   ├── owl.carousel.min.css
+  │   ├── owl.theme.default.css
+  │   ├── owl.theme.default.min.css
+  │   ├── owl.theme.green.css
+  │   ├── owl.theme.green.min.css
+  │   └── owl.video.play.png
+  │
+  ├── owl.carousel.js
+  ├── owl.carousel.min.js
+  ├── LICENSE-MIT
+  └── README.md</code></pre>
+                    <h3 class="f2">Dependecies</h3>
+                    <p>Get the latest
+                        <a href="">jQuery</a> or
+                        <a href="">Zepto</a> library. Minimum compatible jQuery version is 1.8.3 version.</p>
+                    <h3 class="f2">Next Step</h3>
+                    <h4 id="">
+                        <a href="">Installation</a>
+                    </h4>
+                </article>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
